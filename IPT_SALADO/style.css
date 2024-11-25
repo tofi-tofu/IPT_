@@ -1,0 +1,245 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-style: Helvetica, sans-serif;
+}
+
+body {
+	background-color: #eeeeea;
+}
+
+.main {
+	width: 100%;
+	height: 150vh;
+	background: url(pic/bg.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	padding: 15px 0;
+}
+
+.navbar .logo {
+	width: 90px;
+	cursor: pointer;
+}
+
+ul {
+	display: flex;
+	gap: 20px;
+}
+
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+ul li a:hover {
+	color: #FF1493;
+}
+h2 {
+	align: center;
+	
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -500px;
+}
+
+.centered-image {
+	width: 800%;
+	max-width: 900px;
+	height: auto;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	padding: 50px;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	height: 400px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: start;
+}
+
+.card {
+	width: 80px;
+	border-radius: .75rem;
+	background-size: cover;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 2rem;
+	margin: 0 10px;
+	display: flex;
+	align-items: flex-end;
+	transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+	color: white;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+	color: white;
+	border-radius: 50%;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+}
+
+.card > .row > .description {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+	height: 80px;
+	width: 520px;
+	opacity: 0;
+	transform: translateY(30px);
+	transition-delay: .3s;
+	transition: all .3s ease;
+}
+
+.description p {
+	color: #b0b0ba;
+	padding-top: 5px;
+}
+
+.description h4 {
+	text-transform: uppercase;
+}
+
+input {
+	display: none;
+}
+
+input:checked + label {
+	width: 600px;
+}
+
+input:checked + label .description {
+	opacity: 1 !important;
+	transform: translateY(0) !important;
+}
+
+label[for="c1"] {
+	background-image: url('pic/art1.png');
+}
+
+label[for="c2"] {
+	background-image: url('pic/art2.jpg');
+}
+
+label[for="c3"] {
+	background-image: url('pic/art3.jpg');
+}
+
+label[for="c4"] {
+	background-image: url('pic/art4.jpg');
+}
+
+/* ABOUT ME KIMI KIMI HAHAHA*/
+
+#ABOUTME{
+	display: flex;
+	font-family: Georgia, serif;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 20px;
+	margin bottom: 50px;
+}
+#pic{
+	display:flex;
+}
+#pic img{
+	width: 600px;
+	height: 600px;
+	margin-left: 40px;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+#intro{
+	display:flex;
+	flex-direction: column;
+	text-align: justify;
+	padding:20px;
+}
+#intro h2{
+	font-size: 4rem;
+	margin-bottom: 5px;
+}
+#CONTACTS {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+#CONTACTS h1 {
+  background-color: rgb(204, 102, 255); 
+  color: black; 
+  font-size: 36px; 
+  padding: 20px 0; 
+  width: 100%; 
+  margin: 0; 
+  text-align: center; 
+}
+
+#CONTACTS img {
+  display: block; 
+  margin: 10px 0; 
+  height: 70px; 
+  width: 70px; 
+}
+
+#CONTACTS h2 {
+  font-size: 24px; 
+  font-weight: 700;
+  margin: 20px 0; 
+}
+
+#CONTACTS h3,
+#CONTACTS h4,
+#CONTACTS h5 {
+  font-size: 20px; 
+  margin: 10px 0; 
+  font-weight: 400; 
+}
